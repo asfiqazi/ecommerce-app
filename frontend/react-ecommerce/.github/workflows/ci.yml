@@ -1,0 +1,50 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+        cache: 'npm'
+        cache-dependency-path: frontend/react-ecommerce/package-lock.json
+
+    - name: Install dependencies
+      working-directory: frontend/react-ecommerce
+      run: npm ci
+
+    - name: Lint code
+      working-directory: frontend/react-ecommerce
+      run: npm run lint
+
+    - name: Run type checks
+      working-directory: frontend/react-ecommerce
+      run: npm run typecheck
+
+    - name: Run tests
+      working-directory: frontend/react-ecommerce
+      run: npm test
+
+    - name: Build project
+      working-directory: frontend/react-ecommerce
+      run: npm run build
+
+    # Optional: Upload build artifacts
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: frontend-build
+        path: frontend/react-ecommerce/dist
+        retention-days: 5

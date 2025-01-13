@@ -1,7 +1,12 @@
 # Dependency directories
 node_modules/
-dist/
-pnpm-lock.yaml
+jspm_packages/
+bower_components/
+
+# Production build directory
+/dist
+/build
+/out
 
 # Environment files
 .env
@@ -10,25 +15,59 @@ pnpm-lock.yaml
 .env.test.local
 .env.production.local
 
-# Build output
-*.tsbuildinfo
-
 # Logs
-logs/
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Testing
-coverage/
-.nyc_output/
-
-# IDE
+# Editor and IDE files
 .idea/
 .vscode/
-
-# OS
+*.swp
+*.swo
+*~
 .DS_Store
-Thumbs.db
 
-# Vite
-.vite/
+# Testing
+/coverage
+.nyc_output
+
+# Temporary files
+.tmp/
+.temp/
+
+# Typescript build output
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.local
+
+# Vite build cache
+.vite
 *.local
+
+# Misc
+.cache/
+.parcel-cache/
+.next
+.nuxt
+.vercel
+.turbo
