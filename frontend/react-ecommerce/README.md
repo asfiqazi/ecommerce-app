@@ -166,3 +166,13 @@ This project is licensed under the MIT License.
 ## 📞 Support
 
 For support, please open an issue in the GitHub repository or contact support@example.com.
+
+## 📊 Project Status
+
+![Build Status](https://github.com/your-username/ecommerce-app/workflows/Frontend-CI/badge.svg)
+![Coverage](https://codecov.io/gh/your-username/ecommerce-app/branch/main/graph/badge.svg)
+![Version](https://img.shields.io/github/v/release/your-username/ecommerce-app)
+
+---
+
+**Happy Shopping! 🛒✨**
