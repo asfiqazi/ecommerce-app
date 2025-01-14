@@ -100,13 +100,13 @@ A comprehensive, modern e-commerce platform built with cutting-edge technologies
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/ecommerce-app.git
+git clone https://github.com/asfiqazi/ecommerce-app.git
 cd ecommerce-app
 ```
 
 ### Frontend Setup
 ```bash
-cd frontend/react-ecommerce
+cd frontend
 npm install
 cp .env.example .env
 npm run dev
@@ -114,7 +114,7 @@ npm run dev
 
 ### Backend Setup
 ```bash
-cd backend/nest-ecommerce
+cd backend
 npm install
 cp .env.example .env
 npm run start:dev
@@ -180,13 +180,13 @@ This project is licensed under the MIT License.
 
 ## 📞 Support
 
-For support, please open an issue in the GitHub repository or contact support@example.com.
+For support, please open an issue in the GitHub repository or contact iamasfi143@gmail.com.
 
 ## 📊 Project Status
 
-![Build Status](https://github.com/your-username/ecommerce-app/workflows/CI/badge.svg)
-![Coverage](https://codecov.io/gh/your-username/ecommerce-app/branch/main/graph/badge.svg)
-![Version](https://img.shields.io/github/v/release/your-username/ecommerce-app)
+![Build Status](https://github.com/asfiqazi/ecommerce-app/workflows/CI/badge.svg)
+![Coverage](https://codecov.io/gh/asfiqazi/ecommerce-app/branch/main/graph/badge.svg)
+![Version](https://img.shields.io/github/v/release/asfiqazi/ecommerce-app)
 
 ---
 
